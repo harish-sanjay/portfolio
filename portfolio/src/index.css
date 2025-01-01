@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --hue: 0;
+    --sat: 0%;
+    font-family: 'Montserrat', sans-serif;
+    --title-color:  hsl(var(--hue), var(--sat), 20%);
+    --title-color-dark:  hsl(var(--hue), var(--sat), 0%);
+    --text-color: hsl(var(--hue), var(--sat), 46%);
+    --body-color: hsl(var(--hue), var(--sat), 96%);
+    --container-color: #fff;
+}
+
+@layer components {
+    .container {
+        @apply max-w-[968px] mx-auto max-lg:px-6
+    }
+    .active-link{
+        @apply text-[var(--title-color-dark)]
+    }
+    .section {
+        @apply pt-24 px-0 pb-8
+    }
+    .button{
+        @apply inline-block py-5 px-8 rounded-2xl font-medium
+    }
+    .button-icon{
+        @apply ml-2
+    }
+    .button-flex {
+        @apply inline-flex items-center
+    }
+}
+
+@layer base{
+    h1, h2, h3 {
+        @apply text-[var(--title-color)] font-semibold;
+    }
+    body{
+        @apply bg-[var(--body-color)]
+    }
+}
