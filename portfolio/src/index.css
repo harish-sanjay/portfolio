@@ -22,13 +22,15 @@
         @apply text-[var(--title-color-dark)]
     }
     .section {
-        @apply pt-24 px-0 pb-8
+        @apply pt-20 px-0 pb-8 max-md:pt-8 max-md:pb-16
     }
     .button{
-        @apply inline-block py-5 px-8 rounded-2xl font-medium
+        @apply inline-block py-4 px-8 rounded-2xl font-medium bg-[var(--title-color)]
+         text-white
+        hover:bg-[var(--title-color-dark)] max-lg:px-6
     }
     .button-icon{
-        @apply ml-2
+        @apply ml-2 text-xl max-lg:text-lg
     }
     .button-flex {
         @apply inline-flex items-center

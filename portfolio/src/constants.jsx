@@ -1,124 +1,92 @@
 import { FiHome } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
-import { BsGear } from "react-icons/bs";
-import { PiBriefcase } from "react-icons/pi";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { VscSend } from "react-icons/vsc";
-
+import { SiSpring } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
+import LiClone from "./assets/projects/linked-in.png";
+import Blog from "./assets/projects/blog.png";
+import Portfolio from "./assets/projects/portfolio.png";
 
 export const NAV_LINKS = [
   {
-    path: '#home',
-    text: 'Home',
-    icon: <FiHome />
-  }, 
-  {
-    path: '#about',
-    text: 'About',
-    icon: <AiOutlineUser />
-  }, 
-  {
-    path: '#skills',
-    text: 'Skills',
-    icon: <BsGear />
+    path: "#home",
+    text: "Home",
+    icon: <FiHome />,
   },
   {
-    path: '#experience',
-    text: 'Experience',
-    icon: <PiBriefcase />
+    path: "#projects",
+    text: "Projects",
+    icon: <PiProjectorScreenChart />,
   },
   {
-    path: '#projects',
-    text: 'Projects',
-    icon: <PiProjectorScreenChart />
-  }, 
-  {
-    path: '#contact',
-    text: 'Contact',
-    icon: <VscSend />
-  }
+    path: "#about",
+    text: "About",
+    icon: <AiOutlineUser />,
+  },
+  // {
+  //   path: "#contact",
+  //   text: "Contact",
+  //   icon: <VscSend />,
+  // },
 ];
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust 
-and scalable web applications. With 5 years of hands-on experience,
- I have honed my skills in front-end technologies like React and Next.js,
-  as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB.
-   My goal is to leverage my expertise to create innovative solutions that drive
-    business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a 
-passion for creating efficient and user-friendly web applications. With 5 years of professional
- experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL,
-  PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work,
-   and it has evolved into a career where I continuously strive to learn and adapt to new challenges.
-    I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.
-     Outside of coding, I enjoy staying active, exploring new technologies, 
-     and contributing to open-source projects.`;
-
-export const EXPERIENCES = [
+export const SKILLS_LIST = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    name: "Java",
+    icon: <FaJava />,
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    name: "Spring",
+    icon: <SiSpring />,
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    name: "ReactJs",
+    icon: <FaReact />,
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    name: "AWS",
+    icon: <FaAws />,
+  },
+  {
+    name: "MySQL",
+    icon: <DiMysql />,
   },
 ];
+
+export const HERO_CONTENT = `Full stack developer with 3 years of experience in React, 
+Java, AWS, and databases like MySQL, and MongoDB, 
+focused on building scalable web apps and driving business growth.`;
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: "project1",
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+    title: "LinkedIn Clone",
+    image: LiClone,
+    description: "Full Stack clone with React and Java",
+    githubLink: "/",
+    previewLink: "/",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Task Management App",
-    image: "project2",
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
     title: "Portfolio Website",
-    image: "project3",
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+    image: Portfolio,
+    githubLink: "/",
+    previewLink: "/",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
     title: "Blogging Platform",
-    image: "project4",
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    image: Blog,
+    githubLink: "/",
+    previewLink: "/",
+    technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Coimbatore, India ",
+  email: "harishsanjay012@gmail.com",
 };
