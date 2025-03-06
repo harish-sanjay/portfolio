@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply text-white bg-black;
+  }
+  .container {
+    @apply max-w-[80vw] mx-auto max-md:max-w-[85vw]
+  }
+  .section {
+    @apply mb-10 max-lg:mb-8 max-md:mb-6 max-sm:mb-5
+  }
+  .section-title {
+    @apply text-3xl font-bold mb-6; 
+  }
+}
